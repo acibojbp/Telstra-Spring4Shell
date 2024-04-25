@@ -10,12 +10,12 @@ _All information provided in this repository is sourced directly from the progra
 
 ## Contents
 
-- [Task 1 - Responding to a malware attack](#task-1---responding-to-a-malware-attack)
-- [Task 2 - Analysing the attack](#task-2---analysing-the-attack)
-- [Task 3 - Mitigate the malware attack](#task-3---mitigate-the-malware-attack)
-- [Task 4 - Incident Postmortem](#task-4---incident-postmortem)
+- [Task 1: Responding to a malware attack](#task-1-responding-to-a-malware-attack)
+- [Task 2: Analysing the attack](#task-2-analysing-the-attack)
+- [Task 3: Mitigate the malware attack](#task-3-mitigate-the-malware-attack)
+- [Task 4: Incident Postmortem](#task-4-incident-postmortem)
 
-## Task 1 - Responding to a malware attack
+## Task 1: Responding to a malware attack
 
 An alert has come into the Security Operation Centre (SOC). Triage the alert and respond to the malware attack by contacting the appropriate team.
 
@@ -58,7 +58,7 @@ T1 - Model Answer
 
 [My Answer]
 
-## Task 2 - Analysing the attack
+## Task 2: Analysing the attack
 
 Analyse the data of the malware attack to identify how the malware spreads. Find patterns used by the attacker so that we can prepare a firewall rule to stop the spread of the virus.
 
@@ -90,7 +90,7 @@ T2 - Model Answer
 [My Answer]
 
 
-## Task 3 - Mitigate the malware attack
+## Task 3: Mitigate the malware attack
 
 Using the patterns you’ve identified, use Python to write a firewall rule to technically mitigate the malware from spreading.
 
@@ -127,7 +127,7 @@ Running the modified `firewall_server.py` script to block any detection of the `
 [Answer Script](./Solutions/firewall_server_T3.py)  
 [My Script](./Solutions/firewall_server.py)
 
-## Task 4 - **Incident Postmortem**
+## Task 4: Incident Postmortem
 
 ### Here is the background information on your task
 
