@@ -46,7 +46,9 @@ The purpose of this email is to ensure the respective team is aware of the ongoi
 
 ### Solution
 
-[T1 - Model Answer]
+![T1 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/3ce74596-8242-45e5-911a-36cc72a5853d)
+T1 - Model Answer
+
 [My Answer]
 
 ## Task 2 - Analysing the attack
@@ -75,7 +77,9 @@ Finally, draft an email to the networks team with your findings. Make sure to be
 
 ### Solution
 
-[T2 - Model Answer]
+![T2 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/f16b6423-726e-4ed0-aa14-5a5e868b84c1)
+T2 - Model Answer
+
 [My Answer]
 
 
@@ -105,8 +109,16 @@ You may use `test_requests.py` to test your code whilst the firewall HTTP server
 
 ### Solution
 
-[Answer Script](firewall_server_T3.py)
-[My Script]
+Running the base `firewall_server.py` script and executing the `test_requests.py` script to observe the firewall's behavior.
+
+![VirtualBox_Windows 10_24_04_2024_19_58_09](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/8df78928-0200-404b-a695-d79b86206a39)
+
+Running the modified `firewall_server.py` script to block any detection of the `Spring4Shell` and using `test_requests.py` to validate the firewall rule.
+
+![VirtualBox_Windows 10_24_04_2024_19_58_56](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/6bfd7b06-5d96-41c3-b113-83bf1854d340)
+
+[Answer Script](./Solutions/firewall_server_T3.py)
+[My Script](./Solutions/firewall_server.py)
 
 ## Task 4 - **Incident Postmortem**
 
@@ -132,5 +144,5 @@ Make sure to include when the incident started and the root cause. Remember, the
 
 ### Solution
 
-[T4 - Model Answer]
+[T4 - Model Answer](./Solutions/T4 - Model Answer.pdf)
 [My Answer]
