@@ -46,7 +46,8 @@ The purpose of this email is to ensure the respective team is aware of the ongoi
 
 ### Solution
 
-
+[T1 - Model Answer]
+[My Answer]
 
 ## Task 2 - Analysing the attack
 
@@ -74,3 +75,62 @@ Finally, draft an email to the networks team with your findings. Make sure to be
 
 ### Solution
 
+[T2 - Model Answer]
+[My Answer]
+
+
+## Task 3 - Mitigate the malware attack
+
+Using the patterns you’ve identified, use Python to write a firewall rule to technically mitigate the malware from spreading.
+
+### Here is the background information on your task
+
+Work with the networks team to implement a firewall rule using the Python scripting language. Python is a common scripting language used across both offensive and defensive information security tasks.
+
+In this task, we will simulate the firewall’s scripting language by using an HTTP Server. You can assume this HTTP Server has no computational requirements and has the sole purpose of filtering incoming traffic.
+
+In the starter codebase, you will find a test script that you can use to simulate the malicious requests to the server.
+
+You can check out the Readme file in the starter codebase for more information on how to get started.
+
+### Here is your task
+
+Use Python to develop a firewall rule to mitigate the attack. Develop this rule in `firewall_server.py` and only upload this file back here.
+
+You may use `test_requests.py` to test your code whilst the firewall HTTP server is running.
+
+### Resources
+
+[http.server — HTTP servers — Python 3.12.3 documentation](https://docs.python.org/3/library/http.server.html)
+
+### Solution
+
+[Answer Script](firewall_server_T3.py)
+[My Script]
+
+## Task 4 - **Incident Postmortem**
+
+### Here is the background information on your task
+
+The firewall rule worked in stopping the malware attack, 2 hours after the attack began.
+
+After an incident has occurred, it’s best practice to document and record what has happened. A common report written after an incident is a postmortem, which covers a timeline of what has occurred, who was involved in responding to the incident, a root cause analysis and any actions which have taken place.
+
+The purpose of the postmortem is to provide a ‘paper trail’ of what happened, which may be used in future governance, risk, or compliance audits, but also to educate the team on what went down, especially for those on the team who weren’t involved.
+
+In the resources section, you will find some educational content about what is an incident postmortem and why it’s important to create one.
+
+### Here is your task
+
+For this task, create an incident postmortem of the malware attack, covering the details you have picked up in the previous tasks.
+
+Make sure to include when the incident started and the root cause. Remember, the more detail the better.
+
+### Resources
+
+[What is an Incident Postmortem? | Articles | PagerDuty](https://www.pagerduty.com/resources/learn/incident-postmortem/)
+
+### Solution
+
+[T4 - Model Answer]
+[My Answer]
