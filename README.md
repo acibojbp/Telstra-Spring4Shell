@@ -51,12 +51,52 @@ The purpose of this email is to ensure the respective team is aware of the ongoi
 | Spring Framework 5.3.0      | Home & Business Lines   | homebiz.internal.network     | Provides home & business line products such as VoIP                        | Networks Team           | networks@email      | P2 - High     |
 | Spring Framework 5.3.0      | ADSL Connect            | adsl.internal.network        | Provides ADSL product to customers                                         | Networks Team           | networks@email      | P2 - High     |
 
+----
+### My Answer
+
+From: Telstra Security Operations  
+To: NBN Team (nbn@email)  
+Subject: Urgent: Ongoing NBN Connection Malware Attack - March 20th, 2022, at 3:16:34 UTC  
+
+Body:
+
+Hello NBN Team,
+
+We identified a malware attack targeting the NBN Connection infrastructure (nbn.external.network) on March 20th, 2022, at 3:16:34 UTC. This incident has resulted in an ongoing service outage for NBN connections.
+
+Given the critical nature of NBN services, we urge you to initiate an immediate incident response to further mitigate the attack and restore service functionality as quickly as possible. 
+
+For any questions or assistance, please don't hesitate to contact the Telstra Security Operations Center.
+
+Kind regards,  
+Telstra Security Operations
+
+----
+
+----
+
 ### Solution
 
-![T1 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/3ce74596-8242-45e5-911a-36cc72a5853d)  
-T1 - Model Answer
+From: Telstra Security Operations   
+To: nbn team (nbn@email)   
+Subject: ONGOING INCIDENT: Malware Attack on nbn services   
 
-[My Answer]
+—
+
+Body:  
+
+Hello nbn team, 
+
+At 2022-03-20 03:16:34 UTC, Telstra Security Operations detected a malware attack on nbn services using a zero-day vulnerability affecting the Spring Framework. This has led to downtime across our nbn network leading to impaired service functionality. 
+
+Telstra Security Operations is monitoring the incident and will revert with an update. Please have site reliability engineers on standby for mitigation. 
+
+For any questions or issues, don’t hesitate to reach out to us. 
+
+Kind regards,   
+Telstra Security Operations 
+
+----
 
 ## Task 2: Analysing the attack
 
@@ -82,13 +122,80 @@ Finally, draft an email to the networks team with your findings. Make sure to be
 
 [Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
 
+----
+
+### My Answer
+
+From: Telstra Security Operations  
+To: Networks Team (networks@email)  
+Subject: Create Firewall Rule: Urgent Mitigation for Spring4Shell Attack (CVE-2022-22965)  
+
+—
+Body:
+
+Hello Networks Team,
+
+We'd like to request the creation of a firewall rule to mitigate an ongoing attack exploiting the Spring4Shell vulnerability (CVE-2022-22965).
+
+This critical vulnerability allows attackers to execute arbitrary code on vulnerable Spring applications. We've observed a pattern of malicious requests targeting our infrastructure.
+
+To mitigate this attack, we request a firewall rule that blocks the following traffic:
+
+**Method**: POST  
+**URI**: /tomcatwar.jsp  
+**Headers**:  
+**Content-Type**: application/x-www-form-urlencoded" (consider feasibility based on legitimate traffic)  
+Requests containing suspicious custom headers that manipulate classpaths or include known Spring4Shell exploit signatures (if identified)  
+
+**Additional Information**:
+
+Blocking by IP address might be ineffective due to the distributed nature of the attack.  
+Implementing this firewall rule will significantly reduce the attack surface and protect our infrastructure.  
+
+For any questions or to discuss the specifics of the rule further, please don't hesitate to contact us.
+
+Kind regards,  
+Telstra Security Operations
+
+----
+
+----
 ### Solution
 
-![T2 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/f16b6423-726e-4ed0-aa14-5a5e868b84c1)  
-T2 - Model Answer
+From: Telstra Security Operations   
+To: Networks Team (networks@email)   
+Subject: [URGENT] Create Firewall Rule - Mitigate malware attack   
+—
 
-[My Answer]
+Body:  
 
+Hello Networks Team, 
+
+We would like to request the creation of a firewall rule and provide you more information about the ongoing malware attack. 
+
+Attack information;   
+An attacker was able to compromise the Spring Framework on our nbn services using zero-day vulnerability [Spring4Shell](https://www.cisa.gov/news-events/alerts/2022/04/01/spring-releases-security-updates-addressing-spring4shell-and-spring). 
+
+Firewall rule parameters:   
+• Block incoming traffic on client request path “/tomcatwar.jsp”   
+• Block incoming traffic with HTTP headers:   
+
+> suffix=%>//   
+> c1=Runtime  
+> c2=<%  
+> DNT=1  
+> Content-Type=application/x-www-form-urlencoded 
+
+Additional information: 
+
+• The attack appears to have been targeted at our external facing infrastructure using Spring Framework 5.3.0 - monitor for future requests to this path 
+
+For any questions or issues, don’t hesitate to reach out to us. 
+
+Kind regards,  
+Telstra Security Operations 
+
+----
 
 ## Task 3: Mitigate the malware attack
 
@@ -124,7 +231,7 @@ Running the modified `firewall_server.py` script to block any detection of the `
 
 ![VirtualBox_Windows 10_24_04_2024_19_58_56](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/6bfd7b06-5d96-41c3-b113-83bf1854d340)
 
-[Answer Script](./Solutions/firewall_server_T3.py)  
+[Solution Script](./Solutions/firewall_server_T3.py)  
 [My Script](./Solutions/firewall_server.py)
 
 ## Task 4: Incident Postmortem
