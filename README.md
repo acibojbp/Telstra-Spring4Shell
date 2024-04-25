@@ -15,7 +15,7 @@ _All information provided in this repository is sourced directly from the progra
 - [Task 3: Mitigate the malware attack](#task-3-mitigate-the-malware-attack)
 - [Task 4: Incident Postmortem](#task-4-incident-postmortem)
 
-## Task 1 - Responding to a malware attack
+## Task 1: Responding to a malware attack
 
 An alert has come into the Security Operation Centre (SOC). Triage the alert and respond to the malware attack by contacting the appropriate team.
 
