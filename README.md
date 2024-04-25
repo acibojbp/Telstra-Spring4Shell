@@ -98,7 +98,7 @@ Telstra Security Operations
 
 ----
 
-## Task 2: Analysing the attack
+## Task 2: Analysing the attack
 
 Analyse the data of the malware attack to identify how the malware spreads. Find patterns used by the attacker so that we can prepare a firewall rule to stop the spread of the virus.
 
@@ -197,7 +197,7 @@ Telstra Security Operations
 
 ----
 
-## Task 3: Mitigate the malware attack
+## Task 3: Mitigate the malware attack
 
 Using the patterns you’ve identified, use Python to write a firewall rule to technically mitigate the malware from spreading.
 
@@ -238,7 +238,7 @@ Running the modified `firewall_server.py` script to block any detection of the `
 
 ----
 
-## Task 4: Incident Postmortem
+## Task 4: Incident Postmortem
 
 ### Here is the background information on your task
 
