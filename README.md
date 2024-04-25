@@ -8,6 +8,13 @@ _Before proceeding with this simulation, it's essential to note that it involves
 
 _All information provided in this repository is sourced directly from the program itself._
 
+## Contents
+
+- [Task 1 - Responding to a malware attack](#task-1---responding-to-a-malware-attack)
+- [Task 2 - Analysing the attack](#task-2---analysing-the-attack)
+- [Task 3 - Mitigate the malware attack](#task-3---mitigate-the-malware-attack)
+- [Task 4 - Incident Postmortem](#task-4---incident-postmortem)
+
 ## Task 1 - Responding to a malware attack
 
 An alert has come into the Security Operation Centre (SOC). Triage the alert and respond to the malware attack by contacting the appropriate team.
@@ -46,7 +53,7 @@ The purpose of this email is to ensure the respective team is aware of the ongoi
 
 ### Solution
 
-![T1 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/3ce74596-8242-45e5-911a-36cc72a5853d)
+![T1 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/3ce74596-8242-45e5-911a-36cc72a5853d)  
 T1 - Model Answer
 
 [My Answer]
@@ -77,7 +84,7 @@ Finally, draft an email to the networks team with your findings. Make sure to be
 
 ### Solution
 
-![T2 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/f16b6423-726e-4ed0-aa14-5a5e868b84c1)
+![T2 - Model Answer](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/f16b6423-726e-4ed0-aa14-5a5e868b84c1)  
 T2 - Model Answer
 
 [My Answer]
@@ -117,7 +124,7 @@ Running the modified `firewall_server.py` script to block any detection of the `
 
 ![VirtualBox_Windows 10_24_04_2024_19_58_56](https://github.com/acibojbp/Telstra-Spring4Shell/assets/164168280/6bfd7b06-5d96-41c3-b113-83bf1854d340)
 
-[Answer Script](./Solutions/firewall_server_T3.py)
+[Answer Script](./Solutions/firewall_server_T3.py)  
 [My Script](./Solutions/firewall_server.py)
 
 ## Task 4 - **Incident Postmortem**
@@ -144,5 +151,5 @@ Make sure to include when the incident started and the root cause. Remember, the
 
 ### Solution
 
-[T4 - Model Answer](./Solutions/T4 - Model Answer.pdf)
+[T4 - Model Answer](./Solutions/T4%20-%20Model%20Answer.pdf)  
 [My Answer]
