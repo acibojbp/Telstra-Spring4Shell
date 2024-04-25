@@ -118,7 +118,7 @@ Next, identify what characteristics of the Spring4Shell vulnerability have been 
 
 Finally, draft an email to the networks team with your findings. Make sure to be concise, so that they can develop the firewall rule to mitigate the attack. You can assume the recipient is technical and has dealt with these types of requests before.
 
-### Resouces
+### Resources to help you with the task
 
 [Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
 
@@ -217,7 +217,7 @@ Use Python to develop a firewall rule to mitigate the attack. Develop this rule 
 
 You may use `test_requests.py` to test your code whilst the firewall HTTP server is running.
 
-### Resources
+### Resources to help you with the task
 
 [http.server — HTTP servers — Python 3.12.3 documentation](https://docs.python.org/3/library/http.server.html)
 
@@ -256,7 +256,7 @@ For this task, create an incident postmortem of the malware attack, covering the
 
 Make sure to include when the incident started and the root cause. Remember, the more detail the better.
 
-### Resources
+### Resources to help you with the task
 
 [What is an Incident Postmortem? | Articles | PagerDuty](https://www.pagerduty.com/resources/learn/incident-postmortem/)
 
