@@ -6,6 +6,8 @@ Welcome to my Telstra Cyber Simulation Solutions Repository! Within these digita
 
 _Before proceeding with this simulation, it's essential to note that it involves the handling of malware. Please ensure that you conduct these tasks in a controlled and secure environment to prevent any unintended consequences. Always prioritize safety and adhere to cybersecurity best practices while engaging with this simulation._
 
+_All information provided in this repository is sourced directly from the program itself._
+
 ## Task 1 - Responding to a malware attack
 
 An alert has come into the Security Operation Centre (SOC). Triage the alert and respond to the malware attack by contacting the appropriate team.
@@ -44,21 +46,31 @@ The purpose of this email is to ensure the respective team is aware of the ongoi
 
 ### Solution
 
-```
-From: Telstra Security Operations
-To: NBN Team (nbn@email)
-Subject: Urgent: Ongoing NBN Connection Malware Attack - March 20th, 2022, at 3:16:34 UTC
 
-Body:
 
-Hello NBN Team,
+## Task 2 - Analysing the attack
 
-We identified a malware attack targeting the NBN Connection infrastructure (nbn.external.network) on March 20th, 2022, at 3:16:34 UTC. This incident has resulted in an ongoing service outage for NBN connections.
+Analyse the data of the malware attack to identify how the malware spreads. Find patterns used by the attacker so that we can prepare a firewall rule to stop the spread of the virus.
 
-Given the critical nature of NBN services, we urge you to initiate an immediate incident response to further mitigate the attack and restore service functionality as quickly as possible. 
+### Here is the background information on your task
 
-For any questions or assistance, please don't hesitate to contact the Telstra Security Operations Center.
+Now that you have notified the infrastructure owner of the current attack, analyse the firewall logs to find the pattern in the attacker’s network requests. You won’t be able to simply block IP addresses, because of the distributed nature of the attack, but maybe there is another characteristic of the request that is easy to block.
 
-Kind regards,
-Telstra Security Operations
-```
+An important responsibility of an information security analyst is the ability to work across disciplines with multiple teams, both technical and non-technical.
+
+In the resources section, we have attached a proof of concept payload that may be of interest in understanding how the attacker scripted this attack.
+
+### Here is your task
+
+First, analyse the firewall logs in the resources section.
+
+Next, identify what characteristics of the Spring4Shell vulnerability have been used.
+
+Finally, draft an email to the networks team with your findings. Make sure to be concise, so that they can develop the firewall rule to mitigate the attack. You can assume the recipient is technical and has dealt with these types of requests before.
+
+### Resouces
+
+[Spring4Shell Proof of Concept Payload](https://github.com/craig/SpringCore0day/blob/main/exp.py)
+
+### Solution
+
