@@ -221,6 +221,8 @@ You may use `test_requests.py` to test your code whilst the firewall HTTP server
 
 [http.server — HTTP servers — Python 3.12.3 documentation](https://docs.python.org/3/library/http.server.html)
 
+----
+
 ### Solution
 
 Running the base `firewall_server.py` script and executing the `test_requests.py` script to observe the firewall's behavior.
@@ -233,6 +235,8 @@ Running the modified `firewall_server.py` script to block any detection of the `
 
 [Solution Script](./Solutions/firewall_server_T3.py)  
 [My Script](./Solutions/firewall_server.py)
+
+----
 
 ## Task 4: Incident Postmortem
 
